@@ -1,0 +1,97 @@
+body{
+    background: #E9E9E9;
+}
+
+.contenedor {
+    width: 500px;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border:10px solid #2C3E50;
+    margin: 20px;
+
+    /*start flex*/
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    /*TENEMOS 4 VALORES PARA DIRECTION*/
+    /*flex-direction:row;*/
+    /*flex-direction:row-reverse;*/
+    /*flex-direction:column;*/
+    /*flex-direction:column-reverse;*/
+
+    /*Tenemos 3 valores para wrap redimenziona cuando no caven e el contenedor*/
+    /*flex-wrap: wrap;*/
+    flex-wrap: no-wrap;
+    /*flex-wrap: wrap-reverse;*/
+
+    /*atajo equivale a los dos sentencias de arriba*/
+    /*flex-flow: row wrap;*/
+
+
+    /*Distribucion que tendran*/
+    /*justify-content:flex-start;*/
+    /*justify-content:flex-end;*/
+    justify-content:center;
+/*    justify-content:space-around;
+    justify-content:space-between;*/
+
+
+    /*Distribucion vertical para cuando sean en una sola linea*/
+/*    align-items: flex-start;*/
+    /*align-items: flex-end;*/
+    align-items: center;
+    /*align-items: stretch; necesita heigt automatic*/
+    /*align-items: baseline; centra la fuente*/
+
+    /*Para alinear grupos recive los mismo valores que align items*/
+    /*align-content:center;*/
+    /*align-content:flex-start;*/
+    /*align-content:flex-end;*/
+    /*align-content:space-between;*/
+    /*align-content:space-around;  // esta propiedad solo funciona para varias lineas de elementos*/
+
+
+
+
+
+}
+
+.elemento {
+    color: #fff;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: #E67E22;
+    text-align: center;
+      /*flex-basis: 150px; //similar a width*/
+      /*flex-grow:1; // todos los elementos toamaran el 100% del contenedor, tambien puede ser el valor de crecimiento*/
+      /*flex-shrink:1; //  valor de encojimiento*/
+      /*atajo quivale a los tres de arriba*/
+      flex: 1 1 350px;
+}
+
+/*.elemento1{
+    order:3;
+}
+.elemento2{
+    order:1;
+}
+.elemento3{
+    order:2;
+}
+.elemento4{
+    order:4;
+}*/
+
+.elemento3{
+    align-self: flex-start;
+/*    align-self: flex-end;
+    align-self:stretch;
+    align-self:center;
+    align-self:baseline;*/
+
+
+
+}
